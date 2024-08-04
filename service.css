@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9ccd2e3;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.navbar {
+    font-size: 1.3rem;
+    background-color: rgba(255, 105, 180, 0.5);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    transition: background-color 0.3s ease;
+    background-color: #f954a6c1;
+}
+
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    color: #ff69b4;
+
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ff69b4;
+    background-color: #f9ccd2e3;
+    z-index: 0;
+}
+
+.header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.header p {
+    color: #680334a8;
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    max-width: 900px;
+    margin: 20px auto 0;
+}
+
+/* main section */
+.pink-text {
+    color: #ff69b4;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #ff69b4;
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.service-card li {
+    margin-bottom: 10px;
+}
+
+.highlight-card {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 105, 180, 0.8);
+    color: #fff;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.highlight-card:hover .highlight-content {
+    transform: translateY(0);
+}
+
+.btn-pink {
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #f9c0de;
+    color:#ff1493;
+    border-style: solid;
+    border-color: #f66ab56f;
+}
+
+.footer {
+    flex-direction: column;
+}
+
+.footer div {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        margin-left: 0px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .navbar {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1.25rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    .highlight-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .highlight-content {
+        position: static;
+        transform: none;
+        background-color: #ff69b4;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer div {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 601px ) {
+    .highlight-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .highlight-content {
+        position: static;
+        transform: none;
+        background-color: #ff69b4;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer div {
+        margin: 0;
+    }
+}
