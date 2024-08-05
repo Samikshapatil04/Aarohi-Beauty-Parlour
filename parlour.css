@@ -22,14 +22,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Center content horizontally */
 }
 
 .navbar-brand span {
-    font-size: 1.6rem; /* Reduced font size for better fit */
+    font-size: 1.8rem; 
     font-family: cursive;
     color: #fff;
-  /* Adjust font size as needed */
 }
 
 .navbar.scrolled {
