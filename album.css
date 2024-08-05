@@ -206,8 +206,8 @@ p {
 }
 
 .image-gallery img {
-    width: 35%;
-    height: 20%;
+    width: 40%;
+    height: 25%;
     height: auto;
     border-radius: 15px;
     cursor: pointer;
